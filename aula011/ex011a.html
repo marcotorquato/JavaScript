@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+
+        }
+
+        div {
+            border: 1px solid rgba(0, 0, 0, 0.398);
+        }
+
+        input {
+            border-radius: 5px;
+            margin-bottom: 10px;
+            
+        }
+
+        input[type="button"] {
+            color: green;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1>Nacionalidade</h1>
+        Digite o País de origem:<input type="text" name="txt" id="txt">
+        <input type="button" value="Verificando" onclick="pais()">
+        
+        <div id="resultado">
+        </div>
+        <script>
+            var tx = window.document.getElementById('txt')
+            function pais() {
+                var tx = window.document.getElementById('txt')
+                var resultado = window.document.getElementById('resultado')
+                var v = (tx.value)
+                resultado.innerHTML = `Seu País de origem é: <strong>${v}</strong><br>`
+        
+                if (v == 'Brasil') {
+                    resultado.innerHTML += `Você é Brasileiro!`
+                }
+                else {
+                    resultado.innerHTML += `Você é Estrangeiro`
+                }
+        
+            }
+        
+        </script>
+    </div>
+
+</body>
+</html>
