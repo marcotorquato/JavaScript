@@ -1,0 +1,17 @@
+/*
+<<<ORDENANDO UM ARRAY MANEIRA 1:>>>
+
+let num = [2, 4, 30, 10].sort(function compara(a, b) {
+    if (a < b) return -1
+    if (a > b) return 1    
+    return 0
+})
+*/
+
+
+// <<<MANEIRA 2 PARA ORDENAR ARRAY>>>
+/*
+let num = [2, 4, 30, 10]
+num.sort(function(a, b) {return a - b}) 
+console.log(num)
+*/

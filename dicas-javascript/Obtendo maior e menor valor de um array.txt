@@ -1,0 +1,36 @@
+//OBTENDO O MAIOR NÚMERO DENTRO DE UMA ARRAY:
+//Maneira 1:
+
+/*
+let numeros = [45, 67, 100, 40]
+console.log(numeros)
+console.log(`O maior número foi ${Math.max.apply(null, numeros)}`) // <<< Método
+*/
+
+//----------------------------------------------------------------------
+
+//Maneira 2:
+
+/*
+let numeros = [45, 67, 100, 40]
+let maior = 0
+
+for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] > maior) {
+        maior = numeros[i]
+
+    }
+}
+console.log(`O maior número é ${maior}`)
+*/
+
+//________________________________________________________________________
+
+//OBTENDO O MENOR NÚMERO DENTRO DE UMA ARRAY:
+//Maneira 1:
+
+let numeros = [45, 67, 100, 40]
+console.log(numeros)
+console.log(`O maior número foi ${Math.min.apply(null, numeros)}`) <<< Método
+
+//________________________________________________________________________
