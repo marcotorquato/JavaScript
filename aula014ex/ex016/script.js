@@ -6,7 +6,7 @@ function verificar() {
     
    if (inicio.value.length == 0 || final.value.length == 0 || pulo.value.length == 0) {
        result.innerHTML = `Impossível contar!`
-       window,alert('[ERRO] Faltam dados!')
+       window.alert('[ERRO] Faltam dados!')
    }
    else {
        result.innerHTML = `Contando: <br>`
