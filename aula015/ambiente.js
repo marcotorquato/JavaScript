@@ -24,3 +24,4 @@ else {
 }
 
 
+let numb = [Marco, Leticia, Lorenzo]
